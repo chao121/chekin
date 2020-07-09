@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F2F2F2"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/item_title" />
+
+    <LinearLayout
+        android:background="@color/color_FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/color_FFFFFF">
+
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            app:iconifiedByDefault="true"
+            app:searchIcon="@mipmap/ic_order_search"
+            android:imeOptions="actionSearch"
+            android:background="@drawable/item_order_searchview_background"
+            app:queryHint="@string/tv_order_search_hint" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="4dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="12dp"
+                android:background="@color/color_0AABF6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="7.5dp"
+                android:layout_toEndOf="@+id/view"
+                android:text="@string/tv_order_list"
+                android:textColor="@color/color_0AABF6"
+                android:textSize="14sp" />
+
+            <Button
+                android:layout_width="62dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/item_order_button_background"
+                android:text="@string/tv_order_button"
+                android:textColor="@color/color_FFFFFF"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lc_order_chat"
+        android:layout_width="match_parent"
+        android:layout_height="181dp"
+        android:layout_marginTop="12dp" />
+
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_0AABF6</item>
+        <item name="colorPrimaryDark">@color/color_0AABF6</item>
+        <item name="colorAccent">@color/color_0AABF6</item>
+    </style>
+
+
+    <!--tab属性-->
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="FixSystemWindowTheme" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--自定义Dialog弹出的全屏样式,不要继承系统Dialog的样式会出现抖动的情况-->
+    <style name="DialogFull">
+        <item name="android:windowIsFloating">true</item>   <!--是否悬浮在界面上-->
+        <item name="android:windowIsTranslucent">true</item>   <!--是否半透明-->
+        <item name="android:windowNoTitle">true</item> <!--是否有标题-->
+        <item name="android:windowBackground">@android:color/transparent</item>  <!--窗口背景色透明-->
+        <item name="android:backgroundDimEnabled">true</item>  <!--背景是否模糊显示-->
+    </style>
+    <!--自定义Dialog的底部弹出的动画,直接从中间弹出的不加动画-->
+<!--    <style name="DialogBottomAnimation"  parent="android:Animation">-->
+<!--        <item name="android:windowEnterAnimation">@anim/dialog_bottom_in</item>-->
+<!--        <item name="android:windowExitAnimation">@anim/dialog_bottom_out</item>-->
+<!--    </style>-->
+
+</resources>

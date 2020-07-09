@@ -1,0 +1,3 @@
+include ':e2e-component-biz-checkin-vertical'
+include ':app'
+rootProject.name = "e2e-component-biz-checkin"

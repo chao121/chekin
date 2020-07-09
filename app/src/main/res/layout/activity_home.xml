@@ -1,0 +1,912 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F2F2F2">
+
+    <RelativeLayout
+        android:id="@+id/rl_home_banner"
+        android:layout_width="match_parent"
+        android:layout_height="171dp"
+        android:background="@mipmap/ic_home_banner">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15.5dp"
+            android:text="@string/tv_home_title"
+            android:textColor="@color/color_FFFFFF"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/btn_home_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="12dp"
+            android:src="@mipmap/ic_home_logout" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="47.5dp"
+            android:layout_marginEnd="12dp"
+            android:background="@color/color_66FFFFFF" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/view">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ci_home_head"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="15dp"
+                android:src="@mipmap/ic_home_header" />
+
+            <TextView
+                android:id="@+id/ic_home_where"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="78dp"
+                android:layout_marginTop="19dp"
+                android:text=""
+                android:textColor="@color/color_FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_home_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ic_home_where"
+                android:layout_marginStart="78dp"
+                android:layout_marginTop="19dp"
+                android:drawableStart="@mipmap/ic_home_job"
+                android:drawablePadding="8dp"
+                android:includeFontPadding="false"
+                android:text="北宫门验证处  闫尧"
+                android:textColor="@color/color_FFFFFF"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_home_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ic_home_where"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="15dp"
+                android:drawableStart="@mipmap/ic_home_time"
+                android:drawablePadding="8dp"
+                android:includeFontPadding="false"
+                android:text="2020-06-29 20:22:25"
+                android:textColor="@color/color_FFFFFF"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_home_banner"
+        android:layout_marginTop="0dp"
+        android:background="@mipmap/ic_home_bg">
+
+        <RelativeLayout
+            android:id="@+id/rl_certificate"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="12dp"
+            android:background="@mipmap/ic_home_check_bg"
+            android:gravity="center"
+            tools:ignore="PxUsage">
+
+
+            <ImageView
+                android:id="@+id/iv_home_check_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_home_check_img" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="12dp"
+                android:layout_toEndOf="@+id/iv_home_check_img"
+                android:text="@string/tv_home_certificate"
+                android:textColor="@color/color_FFFFFF"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_home_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_certificate"
+            android:layout_marginTop="24dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_order"
+                android:layout_width="160dp"
+                android:layout_height="68.5dp"
+                android:layout_marginStart="12dp"
+                android:background="@mipmap/ic_home_order_bg"
+                tools:ignore="PxUsage">
+
+                <RelativeLayout
+                    android:id="@+id/rl_item_order"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/item_home_circle_white"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@mipmap/ic_home_statistic" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_toEndOf="@+id/rl_item_order"
+                    android:text="@string/tv_home_statistics"
+                    android:textColor="@color/color_FFFFFF"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_statistic"
+                android:layout_width="160dp"
+                android:layout_height="68.5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="12dp"
+                android:background="@mipmap/ic_home_statistic_bg"
+                tools:ignore="PxUsage">
+
+                <RelativeLayout
+                    android:id="@+id/rl_item_statistic"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/item_home_circle_white"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@mipmap/ic_home_order" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_toEndOf="@+id/rl_item_statistic"
+                    android:text="@string/tv_home_order"
+                    android:textColor="@color/color_FFFFFF"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@+id/rl_home_banner"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="-28dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/item_home_info_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:drawableStart="@mipmap/ic_home_voice"
+            android:drawablePadding="12dp"
+            android:text="今日已入园：本设备201人 园区共1020人"
+            android:textColor="@color/color_0AABF6"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_home_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ll_home_button"
+            android:background="@color/color_99000000"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/rl_home_show_card"
+                android:layout_width="match_parent"
+                android:layout_height="116dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/color_FFFFFF"
+                android:visibility="gone">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_home_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_home_show_set"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/color_FFFFFF"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/rl_home_wifi"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/color_FFFFFF">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="12dp"
+                        android:text="@string/tv_setting_wifi"
+                        android:textColor="@color/color_666666"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="12dp"
+                        android:src="@mipmap/ic_help_center_right" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_home_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/color_FFFFFF">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="12dp"
+                        android:text="@string/tv_setting_update"
+                        android:textColor="@color/color_666666"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:id="@+id/ic_home_version"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="12dp"
+                        android:drawableEnd="@mipmap/ic_help_center_right"
+                        android:drawablePadding="12dp"
+                        android:text=""
+                        android:textColor="@color/color_999999"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_home_button"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_33090204">
+
+            <RelativeLayout
+                android:id="@+id/rl_home_card"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_home_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ic_home_card"
+                    android:drawablePadding="8dp"
+                    android:text="@string/tv_home_card"
+                    android:textColor="@color/color_F3F3F3"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/color_FFFFFF" />
+
+            <!--        <RelativeLayout-->
+            <!--            android:layout_width="0dp"-->
+            <!--            android:layout_height="match_parent"-->
+            <!--            android:layout_weight="1"-->
+            <!--            android:gravity="center">-->
+
+            <!--            <TextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:drawableStart="@mipmap/ic_home_helper"-->
+            <!--                android:drawablePadding="8dp"-->
+            <!--                android:text="@string/tv_home_help"-->
+            <!--                android:textColor="@color/color_F3F3F3"-->
+            <!--                android:textSize="14sp" />-->
+            <!--        </RelativeLayout>-->
+
+            <!--        <View-->
+            <!--            android:layout_width="2dp"-->
+            <!--            android:layout_height="match_parent"-->
+            <!--            android:layout_marginTop="16dp"-->
+            <!--            android:layout_marginBottom="16dp"-->
+            <!--            android:background="@color/color_FFFFFF" />-->
+
+            <RelativeLayout
+                android:id="@+id/rl_home_set"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_home_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/item_home_check_setting"
+                    android:drawablePadding="8dp"
+                    android:text="@string/tv_home_set"
+                    android:textColor="@color/color_F3F3F3"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="112dp"-->
+    <!--        android:background="@drawable/item_home_card_title">-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_centerHorizontal="true"-->
+    <!--            android:layout_marginTop="15.5dp"-->
+    <!--            android:text="@string/tv_home_title"-->
+    <!--            android:textColor="@color/color_FFFFFF"-->
+    <!--            android:textSize="18sp" />-->
+
+    <!--    </RelativeLayout>-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv_home_person"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="56dp"-->
+    <!--        android:layout_marginStart="20dp"-->
+    <!--        android:layout_marginTop="84dp"-->
+    <!--        android:layout_marginEnd="20dp"-->
+    <!--        android:background="@drawable/item_home_card_background"-->
+    <!--        android:drawableStart="@mipmap/ic_home_voice"-->
+    <!--        android:drawablePadding="12dp"-->
+    <!--        android:gravity="center_vertical"-->
+    <!--        android:lineSpacingExtra="24dp"-->
+    <!--        android:paddingStart="12dp"-->
+    <!--        android:text="今日已入园：本设备201人 园区共1020人"-->
+    <!--        android:textColor="@color/color_0AABF6"-->
+    <!--        android:textSize="14sp"-->
+    <!--        tools:ignore="HardcodedText,RtlSymmetry" />-->
+
+
+    <!--    <RelativeLayout-->
+    <!--        android:id="@+id/rl_certificate"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="200dp"-->
+    <!--        android:layout_below="@+id/tv_home_person"-->
+    <!--        android:layout_marginStart="12dp"-->
+    <!--        android:layout_marginTop="32dp"-->
+    <!--        android:layout_marginEnd="12dp"-->
+    <!--        android:background="@color/color_0AABF6"-->
+    <!--        android:gravity="center"-->
+    <!--        tools:ignore="PxUsage">-->
+
+    <!--        <RelativeLayout-->
+    <!--            android:id="@+id/rl_item_certificate"-->
+    <!--            android:layout_width="64dp"-->
+    <!--            android:layout_height="64dp"-->
+    <!--            android:layout_centerVertical="true"-->
+    <!--            android:background="@drawable/item_home_circle_white"-->
+    <!--            android:gravity="center"-->
+    <!--            tools:ignore="PxUsage">-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="22dp"-->
+    <!--                android:layout_height="24dp"-->
+    <!--                android:src="@mipmap/ic_home_certificate" />-->
+    <!--        </RelativeLayout>-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_centerVertical="true"-->
+    <!--            android:layout_marginStart="12dp"-->
+    <!--            android:layout_toEndOf="@+id/rl_item_certificate"-->
+    <!--            android:text="@string/tv_home_certificate"-->
+    <!--            android:textColor="@color/color_FFFFFF"-->
+    <!--            android:textSize="24sp" />-->
+
+    <!--    </RelativeLayout>-->
+
+    <!--    <RelativeLayout-->
+    <!--        android:id="@+id/rl_home_button"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/rl_certificate">-->
+
+    <!--        <RelativeLayout-->
+    <!--            android:id="@+id/rl_order"-->
+    <!--            android:layout_width="160dp"-->
+    <!--            android:layout_height="64dp"-->
+    <!--            android:layout_marginStart="12dp"-->
+    <!--            android:layout_marginTop="15dp"-->
+    <!--            android:background="@color/color_81A2BF"-->
+    <!--            tools:ignore="PxUsage">-->
+
+    <!--            <RelativeLayout-->
+    <!--                android:id="@+id/rl_item_order"-->
+    <!--                android:layout_width="36dp"-->
+    <!--                android:layout_height="36dp"-->
+    <!--                android:layout_centerVertical="true"-->
+    <!--                android:layout_marginStart="20dp"-->
+    <!--                android:background="@drawable/item_home_circle_white"-->
+    <!--                android:gravity="center">-->
+
+    <!--                <ImageView-->
+    <!--                    android:layout_width="24dp"-->
+    <!--                    android:layout_height="24dp"-->
+    <!--                    android:src="@mipmap/ic_home_statistic" />-->
+    <!--            </RelativeLayout>-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_centerVertical="true"-->
+    <!--                android:layout_marginStart="12dp"-->
+    <!--                android:layout_toEndOf="@+id/rl_item_order"-->
+    <!--                android:text="@string/tv_home_statistics"-->
+    <!--                android:textColor="@color/color_FFFFFF"-->
+    <!--                android:textSize="15sp" />-->
+
+    <!--        </RelativeLayout>-->
+
+    <!--        <RelativeLayout-->
+    <!--            android:id="@+id/rl_statistic"-->
+    <!--            android:layout_width="160dp"-->
+    <!--            android:layout_height="64dp"-->
+    <!--            android:layout_alignParentEnd="true"-->
+    <!--            android:layout_marginTop="15dp"-->
+    <!--            android:layout_marginEnd="12dp"-->
+    <!--            android:background="@drawable/item_home_order_background"-->
+    <!--            tools:ignore="PxUsage">-->
+
+    <!--            <RelativeLayout-->
+    <!--                android:id="@+id/rl_item_statistic"-->
+    <!--                android:layout_width="36dp"-->
+    <!--                android:layout_height="36dp"-->
+    <!--                android:layout_centerVertical="true"-->
+    <!--                android:layout_marginStart="20dp"-->
+    <!--                android:background="@drawable/item_home_circle_white"-->
+    <!--                android:gravity="center">-->
+
+    <!--                <ImageView-->
+    <!--                    android:layout_width="24dp"-->
+    <!--                    android:layout_height="24dp"-->
+    <!--                    android:src="@mipmap/ic_home_order" />-->
+    <!--            </RelativeLayout>-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_centerVertical="true"-->
+    <!--                android:layout_marginStart="12dp"-->
+    <!--                android:layout_toEndOf="@+id/rl_item_statistic"-->
+    <!--                android:text="@string/tv_home_order"-->
+    <!--                android:textColor="@color/color_FFFFFF"-->
+    <!--                android:textSize="15sp" />-->
+
+    <!--        </RelativeLayout>-->
+    <!--    </RelativeLayout>-->
+    <!--</RelativeLayout>-->
+
+
+    <!--        <include-->
+    <!--            android:id="@+id/title_layout"-->
+    <!--            layout="@layout/item_title" />-->
+
+    <!--        <ScrollView-->
+    <!--            android:layout_marginBottom="64dp"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_below="@+id/title_layout">-->
+
+    <!--            <RelativeLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content">-->
+
+    <!--                <RelativeLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="150dp"-->
+    <!--                    android:background="@mipmap/ic_home_background"-->
+    <!--                    tools:ignore="PxUsage">-->
+
+    <!--                    <TextView-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="50dp"-->
+    <!--                        android:layout_marginStart="20dp"-->
+    <!--                        android:layout_marginTop="20dp"-->
+    <!--                        android:layout_marginEnd="20dp"-->
+    <!--                        android:background="@drawable/item_home_background_info"-->
+    <!--                        android:gravity="center_vertical"-->
+    <!--                        android:lineSpacingExtra="14dp"-->
+    <!--                        android:paddingStart="12dp"-->
+    <!--                        android:text="今日已入园：本设备201人 园区共1020人"-->
+    <!--                        android:textColor="@color/color_FFFFFF"-->
+    <!--                        android:textSize="14sp"-->
+    <!--                        tools:ignore="HardcodedText,RtlSymmetry" />-->
+
+
+    <!--                </RelativeLayout>-->
+
+    <!--                <RelativeLayout-->
+    <!--                    android:id="@+id/rl_certificate"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="80dp"-->
+    <!--                    android:layout_centerHorizontal="true"-->
+    <!--                    android:layout_marginStart="12dp"-->
+    <!--                    android:layout_marginTop="103.5dp"-->
+    <!--                    android:layout_marginEnd="12dp"-->
+    <!--                    android:background="@drawable/item_home_certificate_background"-->
+    <!--                    android:gravity="center"-->
+    <!--                    tools:ignore="PxUsage">-->
+
+    <!--                    <RelativeLayout-->
+    <!--                        android:id="@+id/rl_item_certificate"-->
+    <!--                        android:layout_width="38dp"-->
+    <!--                        android:layout_height="38dp"-->
+    <!--                        android:layout_centerVertical="true"-->
+    <!--                        android:background="@drawable/item_home_circle_white"-->
+    <!--                        android:gravity="center"-->
+    <!--                        tools:ignore="PxUsage">-->
+
+    <!--                        <ImageView-->
+    <!--                            android:layout_width="22dp"-->
+    <!--                            android:layout_height="24dp"-->
+    <!--                            android:src="@mipmap/ic_home_certificate" />-->
+    <!--                    </RelativeLayout>-->
+
+    <!--                    <TextView-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_centerVertical="true"-->
+    <!--                        android:layout_marginStart="12dp"-->
+    <!--                        android:layout_toEndOf="@+id/rl_item_certificate"-->
+    <!--                        android:text="@string/tv_home_certificate"-->
+    <!--                        android:textColor="@color/color_FFFFFF"-->
+    <!--                        android:textSize="24sp" />-->
+
+    <!--                </RelativeLayout>-->
+
+    <!--                <RelativeLayout-->
+    <!--                    android:id="@+id/rl_home_button"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_below="@+id/rl_certificate">-->
+
+    <!--                    <RelativeLayout-->
+    <!--                        android:id="@+id/rl_order"-->
+    <!--                        android:layout_width="160dp"-->
+    <!--                        android:layout_height="64dp"-->
+    <!--                        android:layout_marginStart="12dp"-->
+    <!--                        android:layout_marginTop="15dp"-->
+    <!--                        android:background="@drawable/item_home_statistics_background"-->
+    <!--                        tools:ignore="PxUsage">-->
+
+    <!--                        <RelativeLayout-->
+    <!--                            android:id="@+id/rl_item_order"-->
+    <!--                            android:layout_width="36dp"-->
+    <!--                            android:layout_height="36dp"-->
+    <!--                            android:layout_centerVertical="true"-->
+    <!--                            android:layout_marginStart="20dp"-->
+    <!--                            android:background="@drawable/item_home_circle_white"-->
+    <!--                            android:gravity="center">-->
+
+    <!--                            <ImageView-->
+    <!--                                android:layout_width="24dp"-->
+    <!--                                android:layout_height="24dp"-->
+    <!--                                android:src="@mipmap/ic_home_statistic" />-->
+    <!--                        </RelativeLayout>-->
+
+    <!--                        <TextView-->
+    <!--                            android:layout_width="wrap_content"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:layout_centerVertical="true"-->
+    <!--                            android:layout_marginStart="12dp"-->
+    <!--                            android:layout_toEndOf="@+id/rl_item_order"-->
+    <!--                            android:text="@string/tv_home_statistics"-->
+    <!--                            android:textColor="@color/color_FFFFFF"-->
+    <!--                            android:textSize="15sp" />-->
+
+    <!--                    </RelativeLayout>-->
+
+
+    <!--                    <RelativeLayout-->
+    <!--                        android:id="@+id/rl_statistic"-->
+    <!--                        android:layout_width="160dp"-->
+    <!--                        android:layout_height="64dp"-->
+    <!--                        android:layout_alignParentEnd="true"-->
+    <!--                        android:layout_marginTop="15dp"-->
+    <!--                        android:layout_marginEnd="12dp"-->
+    <!--                        android:background="@drawable/item_home_order_background"-->
+    <!--                        tools:ignore="PxUsage">-->
+
+    <!--                        <RelativeLayout-->
+    <!--                            android:id="@+id/rl_item_statistic"-->
+    <!--                            android:layout_width="36dp"-->
+    <!--                            android:layout_height="36dp"-->
+    <!--                            android:layout_centerVertical="true"-->
+    <!--                            android:layout_marginStart="20dp"-->
+    <!--                            android:background="@drawable/item_home_circle_white"-->
+    <!--                            android:gravity="center">-->
+
+    <!--                            <ImageView-->
+    <!--                                android:layout_width="24dp"-->
+    <!--                                android:layout_height="24dp"-->
+    <!--                                android:src="@mipmap/ic_home_order" />-->
+    <!--                        </RelativeLayout>-->
+
+    <!--                        <TextView-->
+    <!--                            android:layout_width="wrap_content"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:layout_centerVertical="true"-->
+    <!--                            android:layout_marginStart="12dp"-->
+    <!--                            android:layout_toEndOf="@+id/rl_item_statistic"-->
+    <!--                            android:text="@string/tv_home_order"-->
+    <!--                            android:textColor="@color/color_FFFFFF"-->
+    <!--                            android:textSize="15sp" />-->
+
+    <!--                    </RelativeLayout>-->
+    <!--                </RelativeLayout>-->
+
+    <!--                <androidx.cardview.widget.CardView-->
+    <!--                    android:id="@+id/card_home_background"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="156dp"-->
+    <!--                    android:layout_below="@+id/rl_home_button"-->
+    <!--                    android:layout_marginStart="12dp"-->
+    <!--                    android:layout_marginTop="15dp"-->
+    <!--                    android:layout_marginEnd="12dp"-->
+    <!--                    android:layout_marginBottom="12dp"-->
+    <!--                    app:cardBackgroundColor="@color/color_FFFFFF"-->
+    <!--                    app:cardCornerRadius="8dp">-->
+
+    <!--                    <RelativeLayout-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="40dp"-->
+    <!--                        android:background="@drawable/item_home_card_title">-->
+
+    <!--                        <View-->
+    <!--                            android:id="@+id/v_item_bar"-->
+    <!--                            android:layout_width="2dp"-->
+    <!--                            android:layout_height="23dp"-->
+    <!--                            android:layout_centerVertical="true"-->
+    <!--                            android:layout_marginStart="12dp"-->
+    <!--                            android:background="@color/color_FFFFFF" />-->
+
+    <!--                        <TextView-->
+    <!--                            android:layout_width="wrap_content"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:layout_centerVertical="true"-->
+    <!--                            android:layout_marginStart="8dp"-->
+    <!--                            android:layout_toEndOf="@+id/v_item_bar"-->
+    <!--                            android:lineSpacingExtra="24dp"-->
+    <!--                            android:text="北宫门售票处支持以下卡/票核验"-->
+    <!--                            android:textColor="@color/color_FFFFFF"-->
+    <!--                            android:textSize="14sp" />-->
+    <!--                    </RelativeLayout>-->
+    <!--                </androidx.cardview.widget.CardView>-->
+
+
+    <!--                <androidx.cardview.widget.CardView-->
+    <!--                    android:id="@+id/card_home_info"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="121dp"-->
+    <!--                    android:layout_marginBottom="5dp"-->
+    <!--                    android:layout_below="@+id/card_home_background"-->
+    <!--                    android:layout_marginStart="12dp"-->
+    <!--                    android:layout_marginEnd="12dp"-->
+    <!--                    app:cardCornerRadius="8dp">-->
+
+    <!--                    <LinearLayout-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="match_parent"-->
+    <!--                        android:orientation="vertical">-->
+
+
+    <!--                        <RelativeLayout-->
+    <!--                            android:layout_width="match_parent"-->
+    <!--                            android:layout_height="40dp"-->
+    <!--                            android:gravity="center_vertical">-->
+
+    <!--                            <TextView-->
+    <!--                                android:id="@+id/tv_home_address"-->
+    <!--                                android:layout_width="wrap_content"-->
+    <!--                                android:layout_height="wrap_content"-->
+    <!--                                android:layout_marginStart="12dp"-->
+    <!--                                android:drawableStart="@mipmap/ic_home_space"-->
+    <!--                                android:drawablePadding="8dp"-->
+    <!--                                android:text=""-->
+    <!--                                android:textColor="@color/color_333333"-->
+    <!--                                android:textSize="12sp" />-->
+
+    <!--                            <TextView-->
+    <!--                                android:id="@+id/tv_home_time"-->
+    <!--                                android:layout_width="wrap_content"-->
+    <!--                                android:layout_height="wrap_content"-->
+    <!--                                android:layout_marginStart="191.5dp"-->
+    <!--                                android:drawableStart="@mipmap/ic_home_time"-->
+    <!--                                android:drawablePadding="8dp"-->
+    <!--                                android:text=""-->
+    <!--                                android:textColor="@color/color_333333"-->
+    <!--                                android:textSize="12sp" />-->
+    <!--                        </RelativeLayout>-->
+
+    <!--                        <RelativeLayout-->
+    <!--                            android:layout_width="match_parent"-->
+    <!--                            android:layout_height="40dp"-->
+    <!--                            android:gravity="center_vertical">-->
+
+    <!--                            <TextView-->
+    <!--                                android:id="@+id/tv_home_name"-->
+    <!--                                android:layout_width="wrap_content"-->
+    <!--                                android:layout_height="wrap_content"-->
+    <!--                                android:layout_marginStart="12dp"-->
+    <!--                                android:drawableStart="@mipmap/ic_home_person"-->
+    <!--                                android:drawablePadding="8dp"-->
+    <!--                                android:text=""-->
+    <!--                                android:textColor="@color/color_333333"-->
+    <!--                                android:textSize="12sp" />-->
+
+    <!--                            <TextView-->
+    <!--                                android:id="@+id/tv_home_where"-->
+    <!--                                android:layout_width="wrap_content"-->
+    <!--                                android:layout_height="wrap_content"-->
+    <!--                                android:layout_marginStart="191.5dp"-->
+    <!--                                android:drawableStart="@mipmap/ic_home_organization"-->
+    <!--                                android:drawablePadding="8dp"-->
+    <!--                                android:text=""-->
+    <!--                                android:textColor="@color/color_333333"-->
+    <!--                                android:textSize="12sp" />-->
+
+    <!--                            <ImageView-->
+    <!--                                android:id="@+id/iv_home_turn"-->
+    <!--                                android:layout_width="18dp"-->
+    <!--                                android:layout_height="18dp"-->
+    <!--                                android:layout_alignParentEnd="true"-->
+    <!--                                android:layout_marginEnd="14dp"-->
+    <!--                                android:src="@mipmap/ic_home_turn" />-->
+    <!--                        </RelativeLayout>-->
+
+    <!--                        <RelativeLayout-->
+    <!--                            android:layout_width="match_parent"-->
+    <!--                            android:layout_height="40dp"-->
+    <!--                            android:gravity="center_vertical">-->
+
+    <!--                            <TextView-->
+    <!--                                android:id="@+id/tv_home_check"-->
+    <!--                                android:layout_width="wrap_content"-->
+    <!--                                android:layout_height="wrap_content"-->
+    <!--                                android:layout_marginStart="12dp"-->
+    <!--                                android:drawableStart="@mipmap/ic_home_check"-->
+    <!--                                android:drawablePadding="8dp"-->
+    <!--                                android:text=""-->
+    <!--                                android:textColor="@color/color_333333"-->
+    <!--                                android:textSize="12sp" />-->
+
+    <!--                            <ImageView-->
+    <!--                                android:id="@+id/iv_home_help"-->
+    <!--                                android:layout_width="18dp"-->
+    <!--                                android:layout_height="18dp"-->
+    <!--                                android:layout_marginStart="39.5dp"-->
+    <!--                                android:layout_toEndOf="@+id/tv_home_check"-->
+    <!--                                android:src="@mipmap/ic_home_info" />-->
+
+    <!--                            <TextView-->
+    <!--                                android:id="@+id/tv_home_mode"-->
+    <!--                                android:layout_width="wrap_content"-->
+    <!--                                android:layout_height="wrap_content"-->
+    <!--                                android:layout_marginStart="191.5dp"-->
+    <!--                                android:drawableStart="@mipmap/ic_home_entity"-->
+    <!--                                android:drawablePadding="8dp"-->
+    <!--                                android:text=""-->
+    <!--                                android:textColor="@color/color_333333"-->
+    <!--                                android:textSize="12sp" />-->
+
+    <!--                            <ImageView-->
+    <!--                                android:id="@+id/iv_home_setting"-->
+    <!--                                android:layout_width="18dp"-->
+    <!--                                android:layout_height="18dp"-->
+    <!--                                android:layout_alignParentEnd="true"-->
+    <!--                                android:layout_marginEnd="14dp"-->
+    <!--                                android:src="@mipmap/ic_home_setting" />-->
+    <!--                        </RelativeLayout>-->
+    <!--                    </LinearLayout>-->
+
+    <!--                </androidx.cardview.widget.CardView>-->
+    <!--            </RelativeLayout>-->
+    <!--        </ScrollView>-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/btn_home_exit"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_alignParentBottom="true"-->
+    <!--            android:layout_marginStart="12dp"-->
+    <!--            android:layout_marginEnd="12dp"-->
+    <!--            android:layout_marginBottom="12dp"-->
+    <!--            android:background="@drawable/item_home_button_background"-->
+    <!--            android:text="@string/tv_home_exit"-->
+    <!--            android:textColor="@color/color_FFFFFF"-->
+    <!--            android:textSize="14sp" />-->
+
+</RelativeLayout>
